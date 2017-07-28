@@ -422,6 +422,10 @@ textarea{
     height: 163px;
   }
 
+  h1 {
+    font-size: 30px;
+  }
+
   #headflex {
     width:100%;
     min-width: 0px;
