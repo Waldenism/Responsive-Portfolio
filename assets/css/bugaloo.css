@@ -88,11 +88,6 @@ section {
   width: 650px;
 }
 
-#sidebar {
-  width:270px;
-  padding-bottom: 30px;
-}
-
 h2 {
   border-bottom: solid;
   border-bottom-width: 3px;
@@ -107,6 +102,11 @@ h2 {
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+#profilepic {
+  margin: 25px;
+  float: left;
+}
+
 #contentP {
   line-height: 2;
   color: #777777;
@@ -115,9 +115,9 @@ h2 {
   margin-left: 15px;
 }
 
-#profilepic {
-  margin: 25px;
-  float: left;
+#sidebar {
+  width:270px;
+  padding-bottom: 30px;
 }
 
 h3 {
@@ -143,7 +143,7 @@ h3 {
 
 #iconList li{
   display: inline-block;
-  /*padding: 3px;*/
+  padding: 2px;
 }
 
 #iconList li a img {
@@ -172,25 +172,23 @@ footer {
 
 /* Portfolio CSS*/
 
-#portfoliostuff {
-  /*margin: -20px 30px -5px 30px;*/
-}
-
 .portfolioRow {
-  /*margin-bottom: 50px;*/
-  /*margin-top: 50px;*/
-  /*display: flex;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  display: flex;
   flex-direction: row;
-  justify-content: space-between;*/
+  justify-content: space-around;
 }
 
 .portfolioImage {
-  padding: 10px;
-  /*position: relative;*/
+  position: relative;
+}
+#portfolioImage {
+  position:relative;
 }
 
 .portHead {
-  /*position: absolute;*/
+  position: absolute;
   top: 140px;
   left: 0px;
   width:100%;
@@ -293,10 +291,45 @@ textarea{
     padding-bottom: 30px;
   }
 
+  #portfoliostuff {
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .portfolioRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+
+    /*border:solid blue 3px;*/
+  }
+
   .portfolioImage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     width:100%;
-    /*position: relative;*/
+    position: relative;
+  }
+  #portfolioImage {
+    display: none;
+  }
+
+  .portHead {
+    position: absolute;
+    top: 140px;
+    left: 95px;
+    width: 276px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    color:white;
+    background-color: #4aaaa5;
   }
 
 } /* /980 query */
@@ -346,9 +379,40 @@ textarea{
     padding-bottom: 30px;
   }
 
+  .portfolioRow {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .portfolioImage {
+    position: relative;
+  }
+  #portfolioImage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width:100%;
+    position: relative;  }
+
+  .portHead {
+    position: absolute;
+    top: 140px;
+    left: 21px;
+    width:276px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    color:white;
+    background-color: #4aaaa5;
+  }
+
 } /* close Media Query 768 */
-
-
 
 @media screen and (max-width: 640px) {
   header{
@@ -362,7 +426,6 @@ textarea{
     width:100%;
     min-width: 0px;
     margin:0 auto;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -377,7 +440,6 @@ textarea{
   #nav {
     display: flex;
     justify-content: space-around;
-    
   }
 
   #mainZone {
@@ -409,6 +471,49 @@ textarea{
     margin:0 auto;
     margin-top: 20px;
     padding-bottom: 30px;
+  }
+
+  #portfoliostuff {
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .portfolioRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+  }
+
+  .portfolioImage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:276px;
+    margin:0 auto;
+  }
+  #portfolioImage {
+    display: none;
+  }
+
+  .portHead {
+    display:initial;
+    float:center;
+    margin:0 auto;
+    padding: initial;
+    position: absolute;
+    top: 140px;
+    left: initial;
+    width: 276px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    color:white;
+    background-color: #4aaaa5;
+    z-index: 1;
   }
 
 } /*close media query 640 */
