@@ -143,7 +143,7 @@ h3 {
 
 #iconList li{
   display: inline-block;
-  padding: 3px;
+  /*padding: 3px;*/
 }
 
 #iconList li a img {
@@ -169,6 +169,82 @@ footer {
   text-align: center;
   padding: 35px;
 }
+
+/* Portfolio CSS*/
+
+#portfoliostuff {
+  /*margin: -20px 30px -5px 30px;*/
+}
+
+.portfolioRow {
+  /*margin-bottom: 50px;*/
+  /*margin-top: 50px;*/
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-between;*/
+}
+
+.portfolioImage {
+  padding: 10px;
+  /*position: relative;*/
+}
+
+.portHead {
+  /*position: absolute;*/
+  top: 140px;
+  left: 0px;
+  width:100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 20px;
+  color:white;
+  background-color: #4aaaa5;
+}
+
+ /* Contact pace CSS */
+#contactform {
+  padding-left:5px;
+  margin:20px;
+  font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+form {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;  
+}
+
+#opac {
+  opacity: .5;
+}
+
+label {
+  padding-bottom:10px;
+  line-height: 2;
+}
+
+input {
+  width:100%;
+  font-size: 20px;
+  border:1px solid #ddd;
+}
+
+input[type=submit] {
+  background-color: #4aaaa5;
+  padding:10px 20px 10px 20px;
+  width: 140px;
+  text-align: center;
+  color:white;
+}
+
+textarea{
+  width:100%;
+  margin-bottom: 10px;
+  height: 100px;
+  border:1px solid #ddd;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 980px) {
 
@@ -215,6 +291,12 @@ footer {
     width:270px;
     margin-left: 30px;
     padding-bottom: 30px;
+  }
+
+  .portfolioImage {
+    padding: 10px;
+    width:100%;
+    /*position: relative;*/
   }
 
 } /* /980 query */
@@ -330,92 +412,6 @@ footer {
   }
 
 } /*close media query 640 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#portfoliostuff {
-  margin: -20px 30px -5px 30px;
-}
-
-.portfolioRow {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.portfolioImage {
-  position: relative;
-}
-
-.portHead {
-  position: absolute;
-  top: 140px;
-  left: 0px;
-  width:276px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-family: 'Georgia', Times, Times New Roman, serif;
-  font-size: 20px;
-  color:white;
-  background-color: #4aaaa5;
-}
-
-#contactform {
-  padding-left:5px;
-  margin:20px;
-  font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-form {
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;  
-}
-
-#opac {
-  opacity: .5;
-}
-
-label {
-  padding-bottom:10px;
-  line-height: 2;
-}
-
-input {
-  width:597px;
-  font-size: 20px;
-  border:1px solid #ddd;
-}
-
-input[type=submit] {
-  background-color: #4aaaa5;
-  padding:10px 20px 10px 20px;
-  width: 140px;
-  text-align: center;
-  color:white;
-}
-
-textarea{
-  width:597px;
-  margin-bottom: 10px;
-  height: 100px;
-  border:1px solid #ddd;
-}
-*/
 
 
 
